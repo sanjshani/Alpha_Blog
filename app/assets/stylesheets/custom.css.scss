@@ -50,6 +50,17 @@ $navbar-default-bg: #0a1033;          // <<This changed color of the NavBar but 
   margin-top: 0;
 }
 
+.article-title {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 footer {                            //for <footer> element NOT the class!!
   margin-top: 45px;
   padding-top: 5px;
