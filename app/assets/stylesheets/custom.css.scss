@@ -1,4 +1,4 @@
-$navbar-default-bg: #694d2a;          // <<This changed color of the NavBar but NOT sure how it worked!!
+$navbar-default-bg: #0a1033;          // <<This changed color of the NavBar but NOT sure how it worked!!
 
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
@@ -44,7 +44,7 @@ $navbar-default-bg: #694d2a;          // <<This changed color of the NavBar but 
 footer {                            //for <footer> element NOT the class!!
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #0a1033;
   color: #777;                      // ONLY for Copyright
 }
 
