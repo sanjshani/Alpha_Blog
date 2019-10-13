@@ -41,6 +41,15 @@ $navbar-default-bg: #0a1033;          // <<This changed color of the NavBar but 
   background-color: black;
 }
 
+.article-action {
+  border-top: 1px solid #0a1033;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
 footer {                            //for <footer> element NOT the class!!
   margin-top: 45px;
   padding-top: 5px;
