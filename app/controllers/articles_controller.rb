@@ -14,7 +14,9 @@ class ArticlesController < ApplicationController
   end
 
   def create
+     # debugger        T112       Remove it later 
     @article = Article.new(article_params)
+    @article.user = User.last
 
     if @article.save
       flash[:success] = "Article was successfully created!"
