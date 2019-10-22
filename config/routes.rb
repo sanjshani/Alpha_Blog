@@ -3,4 +3,11 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
 
   resources :articles
+
+  get 'signup', to: 'users#new'
+  # post 'users', to: 'users#create'    <-- asigning'users#create' route by itself!!
+  # "resources" below ==> assign every route for "users" except for "users#new"..
+  # ..which is specificllay assigned for "signup" to 'user#new" route'
+  resources :users, except: [:new]
+
 end
