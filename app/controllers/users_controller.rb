@@ -7,14 +7,26 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      flash[:success] = "Welcome to the AlphaBlog #{@user.username}"
+      flash[:success] = "Welcome to the AlphaBlog #{@user.username.capitalize}"
       redirect_to articles_path(@user)
     else
-      render :new
+      render 'new'
     end
   end
 
-  def show
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+
+    if @user.update(user_params)
+      flash[:success] = "#{@user.username.capitalize}, your Account has been successfully updated"
+      redirect_to articles_path
+    else
+      render 'edit'
+    end
   end
 
   private
