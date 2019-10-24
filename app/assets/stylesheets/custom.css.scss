@@ -66,6 +66,11 @@ $navbar-default-bg: #0a1033;          // <<This changed color of the NavBar but 
   padding-bottom: 15px;
 }
 
+.listing {
+  list-style: none;                  //get rid of "bullet" dots
+  padding-left: 0;
+}
+
 footer {                            //for <footer> element NOT the class!!
   margin-top: 45px;
   padding-top: 5px;
