@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   # ..which is specificllay assigned for "signup" to 'user#new" route'
   resources :users, except: [:new]
 
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
+
 end
