@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   # one-to-many table association
-  has_many :articles
+  has_many :articles, dependent: :destroy
 
   # all Emails saved in lowercase
   before_save {self.email = email.downcase}
