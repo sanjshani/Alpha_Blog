@@ -1,3 +1,7 @@
 class Category < ApplicationRecord
+  #many-to-many table association
+  has_many :article_categories
+  has_many :articles, through: :article_categories
+
   validates :name, presence: true, uniqueness: true, length: {minimum: 4, maximum: 25}
 end
