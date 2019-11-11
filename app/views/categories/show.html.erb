@@ -1,1 +1,2 @@
-<h1 align="center">List of Articles for category</h1>
+<h1 align="center"><%= "List of Articles for " + @category.name %></h1>
+<%= render 'articles/article', obj: @category.articles %>

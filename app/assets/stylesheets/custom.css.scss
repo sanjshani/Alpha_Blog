@@ -71,6 +71,17 @@ $navbar-default-bg: #0a1033;          // <<This changed color of the NavBar but 
   padding-left: 0;
 }
 
+.input-checkbox input {
+  width: auto !important;
+}
+
+.badge {
+  background-color: #7fe3b6;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
 footer {                            //for <footer> element NOT the class!!
   margin-top: 45px;
   padding-top: 5px;
