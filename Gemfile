@@ -12,7 +12,7 @@ gem 'will_paginate', '3.1.7'                   # did not work
 gem 'bootstrap-will_paginate', '1.0.0'         # removed it
 
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.4.1'
